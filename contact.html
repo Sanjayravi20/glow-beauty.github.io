@@ -2,16 +2,18 @@
 <html>
 <head>
 
-<title>Contact</title>
+<title>Contact - Glow Beauty</title>
 
 <link rel="stylesheet" href="contact.css">
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- <header>
+<header class="header">
 
 <div class="logo">Glow Beauty</div>
 
@@ -22,59 +24,65 @@
 <a href="contact.html">Contact</a>
 </nav>
 
-</header> -->
+</header>
 
-<section class="title">
-    <h1>Book Appointment</h1>
-    <div class="contact-box">
-        <form id="contact-form" class="contact-form">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="thankyou.html">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number">
-        
 
-        
-        <select>
-        <option>Select Service</option>
-        <option>Facial</option>
-        <option>Hair Styling</option>
-        <option>Bridal Makeup</option>
-        </select>
+<section class="contact">
 
-        <input type="date" name="date">
+<h1>Contact Us</h1>
+<p class="subtitle">We would love to hear from you</p>
 
-        <textarea name="message" placeholder="Message"></textarea>
+<div class="contact-container">
 
-        <button type="submit">Book Now</button>
+<!-- Phone -->
+<div class="contact-card">
+<i class="fa-solid fa-phone"></i>
+<h3>Phone</h3>
+<p>+91 8438911049</p>
+</div>
 
-        </form>
-        <br>
+<!-- Email -->
+<div class="contact-card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>glowbeauty@gmail.com</p>
+</div>
 
-        <a href="https://wa.me/918438911049">Book on WhatsApp</a>
+<!-- Location -->
+<div class="contact-card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Location</h3>
+<p>Tamil Nadu, India</p>
+</div>
 
-    </div>
+</div>
+
+
+<!-- Contact Form -->
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+
+
+</div>
+
 </section>
-
-    <script>
-
-    emailjs.init("YOUR_PUBLIC_KEY");
-
-    document.getElementById("contact-form").addEventListener("submit", function(event){
-    event.preventDefault();
-
-    emailjs.sendForm("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",this)
-    .then(function(){
-     alert("Appointment Sent Successfully!");
-    }, function(error){
-    alert("Failed to send message");
-    });
-
-    });
-
-</script>
 
 </body>
 </html>
-
