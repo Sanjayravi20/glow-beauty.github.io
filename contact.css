@@ -1,67 +1,125 @@
-section{
-    width: 99vw;
-    height: 95vh;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    /* border: 1px solid black; */
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-input, select, textarea{
-    width: 30%;
-}
-button{
-    width: 100px;
-}
-
-
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#f9c5d1,#fbc2eb);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+font-family:Arial;
+margin:0;
+background:#f9f9f9;
 }
 
-form{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    text-align:center;
+.contact{
+text-align:center;
+padding:60px 20px;
 }
 
-h1{
-    margin-bottom:20px;
+.contact h1{
+font-size:40px;
+color:#ff4d88;
 }
 
-input, select, textarea{
-    width:250px;
-    padding:8px;
-    margin:8px 0;
-    border-radius:5px;
-    border:1px solid #ccc;
+.subtitle{
+color:#666;
+margin-bottom:40px;
 }
 
-button{
-    background:#ff4b8b;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+/* Contact Cards */
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-bottom:40px;
 }
 
-button:hover{
-    background:#ff2e73;
+.contact-card{
+background:white;
+padding:30px;
+width:220px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.contact-card i{
+font-size:30px;
+color:#ff4d88;
+margin-bottom:10px;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+
+.contact-form{
+background:white;
+max-width:400px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+.contact-form button{
+background:#ff4d88;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#ff2e73;
+}
+
+/* Map */
+
+.map{
+margin-top:40px;
+}   
+
+
+/* Header */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#ff69b4; 
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:white;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd1e1;
+}
+
+nav{
+display:flex;
+align-items:center;
 }
